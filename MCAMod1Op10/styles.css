@@ -1,0 +1,703 @@
+body {
+  background-color: rgb(248, 213, 219);
+}
+
+.parent {
+  height: 1000px;
+  width: 100%;
+  height: 100%;
+  font-family: "Martel Sans", sans-serif;
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: 200px 30px 1fr 1fr 30px;
+  grid-template-rows: 200px 30px 1fr 60vh 30px;
+  grid-template-areas:
+    "h h h h h"
+    "n n n n n"
+    "m m m m m"
+    "a a a a a"
+    "f f f f f";
+}
+
+hr {
+  height: 1px;
+  background-color: rgb(248, 213, 219);
+}
+
+header {
+  color: rgb(1, 1, 29);
+  text-align: left;
+  border: 3px;
+  grid-area: h;
+}
+
+.header-container {
+  width: 97.5%;
+  height: 83%;
+  background: url("./afbeeldingen/achtergrond.jpg");
+  opacity: 83%;
+  margin: 3px;
+  padding: 14px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-container h1 {
+  color: rgb(1, 1, 29);
+  font-family: "Indie Flower", cursive;
+  font-size: 34px;
+
+  line-height: 105px;
+  text-align: center;
+  margin: 0px;
+}
+
+.header-container h2 {
+  color: rgb(1, 1, 29);
+  font-family: "Martel Sans", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+
+  text-align: center;
+  margin: 0px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-family: "Martel Sans", sans-serif;
+  color: rgb(1, 1, 29);
+}
+
+h4 {
+  padding: 2px;
+  margin: 2px;
+  border: none;
+  font-family: "Martel Sans", sans-serif;
+  color: rgb(217, 215, 219);
+  font-size: 14px;
+  text-align: center;
+}
+
+h5 {
+  padding: 2px;
+  margin: 5px;
+  height: 25px;
+  border: none;
+  font-family: "Martel Sans", sans-serif;
+  color: rgb(1, 1, 29);
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+
+h6 {
+  font-size: 16px;
+  font-family: "Martel Sans", sans-serif;
+  color: rgb(1, 1, 29);
+  padding: 0px;
+  margin: 0px;
+}
+
+nav {
+  background-color: rgb(183, 183, 248);
+  grid-area: n;
+}
+
+label.logo {
+  color: rgb(1, 1, 29);
+  font-size: 23px;
+  font-family: "Indie Flower", cursive;
+
+  padding: 0 10px;
+  font-weight: bold;
+}
+
+label.logo a {
+  text-decoration: none;
+  color: rgb(1, 1, 29);
+  background: none;
+}
+
+main {
+  background-color: rgb(213, 160, 194);
+  opacity: 50;
+  font-size: 14px;
+  color: rgb(1, 1, 29);
+  padding: 10px;
+  margin: 3px;
+  border: 3px;
+  border-radius: 15px;
+  grid-area: m;
+}
+
+section {
+  font-family: "Martel Sans", sans-serif;
+  font-size: 14px;
+  margin: 5px;
+}
+
+.pasvorm {
+  margin: 2px 20px;
+  border-radius: 50%;
+}
+
+.productie {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-left: 4px;
+  margin-right: 4px;
+  border-radius: 10%;
+  border-radius: 10%;
+  float: left;
+}
+
+.huisvlijt_methode {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-left: 4px;
+  margin-right: 4px;
+  border-radius: 10%;
+  float: right;
+}
+
+main.producten {
+  font-family: "Martel Sans", sans-serif;
+  font-size: 95%;
+  margin: 3px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-gap: 1rem;
+}
+
+article.mondkapjes {
+  margin: 1 rem 0;
+  padding: 2rem;
+  display: flex;
+  flex-flow: column;
+
+  border: 1px solid rgb(1, 1, 29);
+  border-radius: 1rem;
+}
+
+article.mondkapjes > img {
+  order: -1;
+  align-self: center;
+}
+
+article.mondkapjes .ul {
+  margin: 0 0 1rem;
+}
+
+article.mondkapjes > p {
+  margin: 0.25em 1rem 1rem;
+  font-family: "Martel Sans", sans-serif;
+  color: rgb(1, 1, 29);
+}
+
+article.mondkapjes > button {
+  margin-top: auto;
+  background: rgb(59, 118, 150);
+
+  padding: 0.5rem;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+}
+
+button > a {
+  color: rgb(217, 215, 219);
+  text-decoration: none;
+}
+
+aside {
+  background-color: rgb(59, 118, 150);
+  opacity: 86%;
+  padding: 5px;
+  margin: 2px;
+  border: 3px;
+  grid-area: a;
+  color: rgb(1, 1, 29);
+  font-family: "Martel Sans", sans-serif;
+}
+
+aside ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 2px;
+  padding: 0;
+  list-style: none;
+}
+
+aside ul li {
+  width: 110px;
+  height: 150px;
+  padding: 2px;
+  margin: 6px;
+  border: 1px solid rgb(1, 1, 29);
+  border-radius: 10%;
+}
+
+.stoffen-plaatje {
+  position: relative;
+  padding-bottom: 30px;
+  padding-top: 90px;
+  height: 0;
+}
+
+.stoffen-plaatje img {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  height: 96%;
+  width: 100%;
+  border-radius: 10%;
+}
+
+.patroon {
+  position: relative;
+  padding-bottom: 85px;
+  padding-top: 30px;
+  height: 0;
+}
+
+.patroon a img {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  height: 75%;
+  width: 100%;
+  border-radius: 10%;
+}
+
+.video {
+  position: relative;
+  padding-bottom: 50px;
+  padding-top: 40px;
+  height: 0;
+}
+
+.video iframe {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  height: 96%;
+  width: 100%;
+  border-radius: 10%;
+}
+
+.different {
+  background-color: rgb(213, 160, 194);
+  padding: 0px;
+  margin: 2px;
+  border: 0px;
+  border-radius: 15px;
+  grid-area: a;
+  color: rgb(1, 1, 29);
+  font-family: "Martel Sans", sans-serif;
+}
+
+.payments {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.payments ul {
+  margin: 0px 3px;
+  padding: 0;
+  list-style: none;
+}
+
+.payments ul li {
+  margin: 0px 3px;
+  border: none;
+}
+
+li.method1 {
+  width: 10vh;
+  height: 8vh;
+  padding: 15px 5px;
+  margin: 10px;
+  border: 0px;
+}
+
+li.method2 {
+  width: 10hv;
+  height: 8vh;
+  padding: 15px 5px;
+  margin: 10px;
+  border: 0px;
+}
+
+li.contact-details {
+  width: 220px;
+  height: 220px;
+  font-size: 14px;
+  padding: 0px;
+  margin: 3px;
+  border: none;
+}
+
+form {
+  margin: 10px;
+  padding: 20px;
+  color: rgb(1, 1, 29);
+  background-color: rgb(213, 160, 194);
+  font-family: "Martel Sans", sans-serif;
+  border-radius: 15px;
+  border: 3px dotted rgb(59, 118, 150);
+}
+
+.name-address {
+  margin: 5px;
+}
+
+input.adjust {
+  width: 35px;
+}
+
+.flex_container table {
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.flex_container table th {
+  width: 300px;
+  display: flexbox;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+form table input {
+  width: 30px;
+}
+
+th {
+  padding: 7px;
+}
+
+.even {
+  background-color: rgb(173, 118, 153);
+}
+
+nav ul {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 75vh;
+  background: rgb(248, 213, 219);
+  top: 231px;
+  left: -120%;
+  transition: all.5s;
+}
+
+nav ul li {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  line-height: 30px;
+}
+
+nav ul li a {
+  font-size: 20px;
+  color: blue;
+  font-family: "Martel Sans", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+}
+
+a:hover,
+a.active {
+  background: rgb(248, 213, 219);
+  color: rgb(1, 1, 29);
+  transition: 0.5s;
+}
+
+#check:checked ~ ul {
+  left: 0;
+}
+
+.checkbtn {
+  font-size: 16px;
+  color: rgb(14, 48, 99);
+  float: right;
+  line-height: 30px;
+  margin-right: 20px;
+  padding: 3px 10px;
+  display: block;
+}
+
+#check {
+  display: none;
+}
+
+footer {
+  background-color: rgb(183, 183, 248);
+  color: rgb(1, 1, 29);
+  font-size: 14px;
+  grid-area: f;
+}
+
+footer .p1 {
+  font-family: "Indie Flower", cursive;
+  font-weight: bold;
+  text-align: center;
+  line-height: 11px;
+  margin: 10px 3px 0px;
+}
+
+footer .p1 a {
+  text-decoration: none;
+  color: rgb(1, 1, 29);
+  background: none;
+}
+
+footer .p2 {
+  font-size: 10px;
+  font-family: "Martel Sans", sans-serif;
+  text-align: center;
+  line-height: 10px;
+  margin: 0px;
+  padding: 0px;
+}
+
+@media (min-width: 641px) {
+  .parent {
+    height: 600px;
+    width: 100%;
+    font-family: "Martel Sans", sans-serif;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: 200px 30px 1fr 1fr 30px;
+    grid-template-rows: 200px 30px 1fr 1fr 30px;
+    grid-template-areas:
+      "h h h h h "
+      "n n n n n"
+      "m m m m m"
+      "a a a a a"
+      "f f f f f";
+  }
+
+  .header-container h1 {
+    font-size: 65px;
+  }
+
+  .header-container h2 {
+    font-size: 30px;
+  }
+
+  h4 {
+    font-size: 16px;
+    padding: none;
+    margin: none;
+    border: none;
+  }
+
+  aside ul li {
+    width: 250px;
+    height: 200px;
+    padding: 2px;
+    margin: 5px;
+  }
+
+  .stoffen-plaatje {
+    padding-bottom: 145px;
+    padding-top: 20px;
+    margin: 2px;
+  }
+
+  .stoffen-plaatje img {
+    height: 96%;
+    width: 100%;
+  }
+
+  .patroon {
+    padding-bottom: 145px;
+    padding-top: 15px;
+    margin: 2px;
+  }
+
+  .patroon a img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .video {
+    padding-bottom: 150px;
+    padding-top: 10px;
+    margin: 2px;
+  }
+
+  .video iframe {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .parent {
+    height: 1000px;
+    width: 100%;
+    height: 100%;
+    font-family: "Martel Sans", sans-serif;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: 200px 30px 1fr 50px 230px;
+    grid-template-rows: 200px 30px 1fr 150px 30px;
+    grid-template-areas:
+      "h h h h h "
+      "n n n n n"
+      "m m m m a"
+      "m m m m a"
+      "f f f f f";
+  }
+
+  .header-container h1 {
+    font-size: 80px;
+    text-align: center;
+  }
+
+  .header-container h2 {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  aside ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  aside ul li {
+    width: 200px;
+    height: 175px;
+    padding: 5px 3px;
+    margin: 10px 2px;
+    align-self: center;
+  }
+
+  .stoffen-plaatje {
+    padding-bottom: 130px;
+    padding-top: 15px;
+  }
+
+  .stoffen-plaatje img {
+    height: 96%;
+    width: 100%;
+  }
+
+  .patroon {
+    padding-bottom: 130px;
+    padding-top: 15px;
+  }
+
+  .patroon a img {
+    height: 96%;
+    width: 100%;
+  }
+
+  .video {
+    padding-bottom: 130px;
+    padding-top: 15px;
+  }
+
+  .video iframe {
+    height: 96%;
+    width: 100%;
+  }
+
+  .different h5 {
+    margin-top: 50px;
+    padding: 3px;
+  }
+
+  .payments ul {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
+    padding: 0;
+  }
+
+  .payments ul li {
+    margin-top: 15px;
+    border: none;
+  }
+
+  li.method1 {
+    height: 15vh;
+    width: 8vh;
+    padding: 5px;
+    margin-top: 15vh;
+    border: 0px;
+  }
+
+  li.method2 {
+    height: 15vh;
+    width: 8vh;
+    padding: 5px;
+    margin-top: 1vh;
+    border: 0px;
+  }
+
+  li.contact-details {
+    font-size: 14px;
+    padding: 5px;
+    margin: 10px;
+    border: none;
+  }
+
+  nav ul {
+    position: relative;
+    display: listitem;
+    width: 400px;
+    height: 30px;
+    background: unset;
+    top: 10%;
+    left: unset;
+    text-align: right;
+    float: right;
+    bottom: unset;
+    margin: 0px;
+    transition: all.5s;
+  }
+
+  nav ul li {
+    display: inline;
+    margin-right: 15px;
+  }
+
+  nav ul li a {
+    color: blue;
+    font-family: "Martel Sans", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 3px 10px;
+    text-decoration: none;
+  }
+
+  a.active,
+  a:hover {
+    color: rgb(1, 1, 29);
+    background: rgb(248, 213, 219);
+    transition: 0.5s;
+  }
+
+  .checkbtn {
+    display: none;
+  }
+}

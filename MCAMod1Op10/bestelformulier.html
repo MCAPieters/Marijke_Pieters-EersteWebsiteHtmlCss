@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <title>Huisvlijt Mondkapjes</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Martel+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/4d8b722df1.js"
+      crossorigin="anonymous"
+     ></script>
+
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  </head>
+
+  <body>
+
+    <div class="parent">
+
+      <header>
+        <div class="header-container">
+          <h1>Huisvlijt Mondkapjes</h1>
+          <h2>Duurzame 3D Mondkapjes</h2>
+        </div>
+      </header>
+
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+
+        <label class="logo"><a href="index.html"> Huisvlijt</a></label>
+
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="producten.html">Producten</a></li>
+          <li><a class="active" href="bestelformulier.html">Bestelformulier</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <form name="Bestelformulier" method="POST" data-netlify="true">
+
+            <h2>Bestelformulier</h2>
+
+            <p><label>Voornaam:</label><br/><input type="firstname" name="voornaam" /></p>
+
+            <p><label>Achternaam:</label><br/><input type="lastname" name="achternaam" /></p>
+
+            <p><label>Adres:</label><br/> <input type="address" name="adres" /><span>
+             <label> Huisnr:</label> <input type="text" name="huisnr" class= "adjust" ></span></p>
+
+            <p><label>postcode:</label><br/><input type="postcode" name="postcode"></p>
+
+            <p><label>Email:</label><br/><input type="email" name="email" /></p>
+
+            <p><label>Telefoonnummer:</label><br/><input type="tel" name="tel" /></p>
+          
+
+          <div class= "flex_container">
+
+            <table>
+              <tr>
+              <th><h3>Mondkapje</h3></th>
+              <th class="aantal"><h3>aantal:</h3></th>
+              </tr>
+            </table>
+
+            <table>
+              <tr>
+                <th>Dromerig blauw</th>
+                <th class="aantal"><input type="number" id="Dromerig Blauw" name="Dromerig Blauw" min="0" max="9" placeholder ="0"></th> 
+              </tr>
+            </table>
+
+            <table>
+              <tr class="even">
+                <th>Effen Blauw</th>
+                <th class="aantal"><input type="number" id="Effen Blauw" name="Effen Blauw" min="0" max="9" placeholder ="0"></th> 
+              </tr>
+            </table>
+
+            <table>
+              <tr>
+                <th>Blauw Gestreept</th>
+                <th class="aantal"><input type="number" id="Blauw Gestreept" name="Blauw Gestreept" min="0" max="9" placeholder ="0"></th> 
+              </tr>
+            </table>
+
+            <table>
+              <tr class= "even">
+                <th>Zachtroze</th>
+                <th><input type="number" id="Zachtroze" name="Zachtroze" min="0" max="9" placeholder ="0"></th> 
+              </tr>
+            </table>
+
+            <table>
+              <tr>
+                <th>Effen Rood</th>
+                <th><input type="number" id="Effen Rood" name="Effen Rood" min="0" max="9" placeholder ="0"></th> 
+              </tr>
+            </table>
+      
+            <table>
+              <tr class= "even">
+                <th>Roze Gestreept</th>
+                <th><input type="number" id="Roze Gestreept" name="Roze Gestreept" min="0" max="9" placeholder ="0"></th> 
+              </tr>
+            </table>
+
+            <table>
+              <tr>
+                <th>Mille-fleurs</th>
+                <th><input type="number" id="Mille-fleurs" name="Mille-fleurs" min="0" max="9" placeholder ="0"></th> 
+              </tr>
+            </table>
+
+            <table>
+              <tr class= "even">
+                <th>Vlindertjes</th>
+                <th><input type="number" id="Vlindertjes" name="Vlindertjes" min="0" max="9" placeholder ="0"></th> 
+              </tr>
+            </table>
+
+            <table>
+              <tr>
+                <th>Paarse Bloemetjes</th>
+                <th><input type="number" id="Paarse Bloemetjes" name="Paarse Bloemetjes" min="0" max="9" placeholder ="0"></th> 
+              </tr>
+            </table>
+              </div>
+
+            <p><button type="submit" name= "verzenden">Verzenden</button>
+            <button type="reset" name= "reset" >Reset</button></p>
+
+            <p><i class="fa fa-truck" style="font-size:36px" color="rgb(1, 1, 29)" position= "reverse"></i><br/>verzending door PostNL €4,50 per zending</p>
+
+        </form>
+
+          <p>Maak het totaalbedrag (mondkapjes + verzendkosten) over op rekeningnr NL56RABO 12345678 onder vermelding van je voor- en achternaam.</p>
+
+      </main>
+
+
+      <aside class="different">
+         <h5> Betaalmethoden</h5>
+
+        <ul class="payments">  
+        <li class="method1" ><i class="fa fa-credit-card" style="font-size:60px;color:rgb(1, 1, 29)"></i></li>
+        <li class="method2"><i class="fa fa-cc-paypal" style="font-size:60px;color:rgb(1, 1, 29)"></i></li>
+        <li class="contact-details"> <h6>Contact</h6> M.C.A. Pieters<br/>Email:bestaatniet@gmail.com<br/>Tel:0000000000<br/></li>       
+        </ul>
+
+      </aside>
+
+      <footer>
+        <p class="p1"><a href="index.html">&copy; Huisvlijt 2020</a></p>
+
+        <br />
+
+        <p class="p2">
+          Dit is geen echte webshop, maar de eindopdracht van module 1 van Winc Academy
+        </p> 
+        
+      </footer>
+    </div>
+  </body>
+</html>
